@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Carbon Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>?? Elexis</h1>
+
+        <div class="input-group">
+            <label>?? Distance Driven (km)</label>
+            <input type="number" id="carKm" placeholder="e.g., 20">
+        </div>
+
+        <div class="input-group">
+            <label>?? Electricity Used (kWh)</label>
+            <input type="number" id="electricity" placeholder="e.g., 10">
+        </div>
+
+        <div class="input-group">
+            <label>?? Meat Consumption (kg)</label>
+            <input type="number" id="meat" placeholder="e.g., 0.5">
+        </div>
+
+        <button onclick="calculateCarbon()">Calculate</button>
+
+        <h2>Total CO2 Emission: <span id="result">0</span> kg</h2>
+        <h3>History:</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
